@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Some Posts</h1>
+          <h1>Some Posts!</h1>
        </header>
         <section className="content">
             {this.state.posts.map(post => 
