@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^4.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
     "json-server": "^0.12.1"
   },
   "scripts": {
-    "start": "npm run-script build && node server",
-    "start:dev": "react-scripts start",
+    "start": "npm run build && npm run json-serve",
+    "json-serve": "node server.js",
+    "start:dev": "concurrently \"npm run json-serve\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

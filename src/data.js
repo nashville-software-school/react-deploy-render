@@ -1,6 +1,6 @@
 const baseUrl = process.env.NODE_ENV === 'production'
-    ? "/"
-    : "http://localhost:5002/";
+    ? '/api/'
+    : "http://localhost:5002/api/";
 
 const data = {
     getPosts: () => {
