@@ -44,7 +44,7 @@ Therefore, you need to modify your application code **before you deploy** to mak
 1. Click the **Add Disk** button.
 1. In the name field, you can provide any descriptive label you want for this disk (e.g. database)
 1. Mount path should be `/var/data`
-1. Choose `5GB` for the size.
+1. Enter `1GB` for the size.
 1. Scroll down and click the **Create Web Service** button.
 
 Then the platform will pull your repository code, install all the `npm` packages, build your project and make it live.
